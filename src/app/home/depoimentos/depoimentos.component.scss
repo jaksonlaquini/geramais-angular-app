@@ -1,0 +1,121 @@
+.texto-primario {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+}
+
+.texto-titulo-topico {
+  font-weight: 100;
+  line-height: 0.2;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.linha-servico {
+  width: 143px;
+  background: orange;
+  height: 2px;
+  margin-top: 13px;
+  margin-bottom: 1rem;
+}
+
+.card-depoimento {
+  background: #FF9737;
+  height: 200px;
+  width: 217px;
+  min-width: 217px;
+  border-radius: 23px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+.texto-titulo-card-depoimento {
+  color: #000B27;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 1.5rem;
+}
+
+.texto-subtitulo-card-depoimento {
+  color: #000B27;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.texto-corpo-card-depoimento {
+  font-size: 13px;
+  text-align: justify;
+  padding: 5px;
+  line-height: 1.5;
+  overflow: auto;
+}
+
+.icone-card-servico {
+  padding-top: 50px;
+  font-size: 40px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.container-depoimento {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.rating {
+  font-size: 40px;
+}
+
+.div-rating {
+  bottom: 0;
+  position: absolute;
+  margin-left: 29px;
+}
+
+.slick-slider {
+  width: 100%;
+  margin: auto;
+}
+
+.nav-btn {
+  height: 47px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+  top: 100px !important;
+}
+
+.prev-slide.slick-disabled,
+.next-slide.slick-disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.prev-slide {
+  background: url(C:\projetos\geramais\geramaisengenhariaapp\src\assets\img\brand\favicon.png) no-repeat scroll 0 0;
+  left: -33px;
+}
+
+.next-slide {
+  background: url(C:\projetos\geramais\geramaisengenhariaapp\src\assets\img\brand\favicon.png) no-repeat scroll -24px 0px;
+  right: -33px;
+}
+
+.prev-slide:hover {
+  background-position: 0px -53px;
+}
+
+.next-slide:hover {
+  background-position: -24px -53px;
+}

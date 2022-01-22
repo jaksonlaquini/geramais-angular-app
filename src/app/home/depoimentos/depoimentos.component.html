@@ -1,0 +1,26 @@
+<div class="mb-20 mt-30 container-depoimento shape-container d-flex align-items-center">
+  <div class="col px-0">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-10 text-center mt-30">
+        <h4 class="texto-titulo-topico">Depoimentos</h4>
+        <hr class="linha-servico">
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center mb-20" >
+      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+        (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+
+        <div ngxSlickItem class="slide col-lg-2 text-center card-depoimento" *ngFor="let depoimento of listaDepoimento">
+          <h2 class="texto-titulo-card-depoimento">{{depoimento.nomeCliente}}</h2>
+          <h4 class="texto-subtitulo-card-depoimento">{{depoimento.local}}</h4>
+          <div style="max-height: 80px; overflow: auto;">
+            <h4 class="texto-corpo-card-depoimento">"{{depoimento.descricao}}"</h4>
+          </div>
+          <div class="div-rating">
+            <ngb-rating class="rating" [rate]="3"></ngb-rating>
+          </div>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+</div>

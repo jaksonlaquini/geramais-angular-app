@@ -1,0 +1,41 @@
+.copyright {
+  text-align: center;
+  color: white;
+}
+
+.localizacao-titulo {
+  font-weight: 600;
+}
+
+.rede-social {
+  display: flex;
+  font-size: 31px;
+  justify-content: center;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.footer-principal {
+  background: #D9D9D9;
+}
+
+
+.icones-rede-social {
+  color: #000B27;
+  font-size: 45px;
+}
+
+@media (max-width: 768px) {
+  .teste-center {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.container-footer {
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
