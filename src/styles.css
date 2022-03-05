@@ -1,2 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+.mt-30 {
+  margin-top: 30px;
+}
 
+
+.titulo-topico {
+  font-weight: 100;
+  line-height: 0.2;
+}
+
+.linha-topico {
+  background: orange;
+  height: 2px;
+  margin-top: 13px;
+  margin-bottom: 1rem;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}

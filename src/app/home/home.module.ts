@@ -4,11 +4,11 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
-import { ServicoComponent } from '../servico/servico.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { VantagemEnergiaSolarComponent } from './vantagem-energia-solar/vantagem-energia-solar.component';
 import { DepoimentosComponent } from './depoimentos/depoimentos.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { NossosServicosComponent } from './nossos-servicos/nossos-servicos.component';
 
 @NgModule({
     imports: [
@@ -19,7 +19,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
         NgbModule,
         SlickCarouselModule
     ],
-    declarations: [ HomeComponent, ServicoComponent, VantagemEnergiaSolarComponent, DepoimentosComponent ],
+    declarations: [ HomeComponent, NossosServicosComponent, VantagemEnergiaSolarComponent, DepoimentosComponent ],
     exports: [ HomeComponent ],
     providers: []
 })

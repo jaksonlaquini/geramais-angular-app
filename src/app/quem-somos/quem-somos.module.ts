@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { QuemSomosComponent } from './quem-somos.component';
 import { FundadorComponent } from './fundador/fundador.component';
+import { ServicosComponent } from './servicos/servicos.component';
 
 @NgModule({
     imports: [
@@ -15,7 +16,7 @@ import { FundadorComponent } from './fundador/fundador.component';
         RouterModule,
         NgbModule,
     ],
-    declarations: [ QuemSomosComponent, FundadorComponent ],
+    declarations: [ QuemSomosComponent, FundadorComponent, ServicosComponent ],
     exports: [ QuemSomosComponent, FundadorComponent ],
     providers: []
 })
