@@ -8,19 +8,23 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeModule } from './home/home.module';
 import { QuemSomosModule } from './quem-somos/quem-somos.module';
+import { OrcamentoComponent } from './orcamento/orcamento.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    OrcamentoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HomeModule,
-    QuemSomosModule
+    QuemSomosModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
