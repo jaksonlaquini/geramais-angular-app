@@ -8,12 +8,14 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeModule } from './home/home.module';
 import { QuemSomosModule } from './quem-somos/quem-somos.module';
+import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ComoFuncionaComponent
   ],
   imports: [
     BrowserModule,
