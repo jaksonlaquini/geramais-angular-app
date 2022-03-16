@@ -1,21 +1,36 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="accordion" id="accordionExample">
-
-  <div class="accordion-item">
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h3>Perguntas frequentes</h3>
+<div class="accordion" [attr.id]="'accordionExample'">
+  <div
+    class="accordion-item div-accordion-custom"
+    *ngFor="let p of perguntasFrequentes"
+  >
     <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed btn-style-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        2- Qual é a validade dos créditos de energia solar?
+      <button
+        class="accordion-button collapsed btn-style-custom"
+        type="button"
+        data-bs-toggle="collapse"
+        [attr.data-bs-target]="'#collapseThree' + p.id"
+        aria-expanded="false"
+        [attr.aria-controls]="'collapseThree' + p.id"
+      >
+        {{ p.pergunta }}
       </button>
     </h2>
-    <div id="collapseThree" class="accordion-collapse collapse btn-style-custom" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+    <div
+      [attr.id]="'collapseThree' + p.id"
+      class="accordion-collapse collapse btn-style-custom"
+      aria-labelledby="headingThree"
+      [attr.data-bs-parent]="'#accordionExample'"
+    >
       <div class="accordion-body">
-        Toda a energia constituída a mais pelo sistema de energia solar fotovoltaica, que é injetada na rede da distribuidora, será “emprestada” para a distribuidora. Assim, será gerado um “crédito” de energia para você. Este crédito tem validade de no máximo 60 meses.
+        {{ p.resposta }}
       </div>
     </div>
   </div>
