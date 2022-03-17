@@ -9,3 +9,23 @@
 .div-accordion-custom{
   margin: 5px;
 }
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+.container-como-funciona {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100vh;
+}
+.align-items-self-custom{
+  align-self: flex-end;;
+}
+.perguntas-frequentes-style{
+  border-bottom: dotted;
+  border-color: #FF9737;
+  width: 285px;
+}
