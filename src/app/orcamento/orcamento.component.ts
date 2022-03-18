@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '../core/services/message.service';
 import { OrcamentoModel } from './model/orcamento.model';
 
 @Component({
@@ -9,17 +10,24 @@ import { OrcamentoModel } from './model/orcamento.model';
 export class OrcamentoComponent implements OnInit {
 
   orcamento: OrcamentoModel = new OrcamentoModel();
-  constructor() { }
+  constructor(private messageService: MessageService) { }
 
   ngOnInit(): void {
+    this.iniciarOrcamento();
 
   }
 
   public enviarOrcamento(): void {
+    this.messageService.showMessage('teste', 'error');
     console.log(this.orcamento.nome);
   }
 
   public limparOrcamento(): void {
-    this.orcamento = new OrcamentoModel();
+    this.iniciarOrcamento();
+  }
+
+  iniciarOrcamento(): void {
+    this.orcamento =  new OrcamentoModel();
+    this.orcamento.servico = 'Selecione um serviço';
   }
 }

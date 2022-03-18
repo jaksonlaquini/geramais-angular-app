@@ -9,8 +9,8 @@
       <div class="col-md-4">
         <div class="form-group">
           <label class="negrito-600" for="exampleFormControlSelect1">Informe o serviço que deseja solicitar:</label>
-          <select class="form-control"  id="exampleFormControlSelect1">
-            <option value="Não Informado">Selecione um serviço</option>
+          <select class="form-control" [(ngModel)]="orcamento.servico" placeholder="teste" id="exampleFormControlSelect1">
+            <option>Selecione um serviço</option>
             <option>Energia Solar</option>
             <option>Consultoria</option>
             <option>Manutenção</option>
