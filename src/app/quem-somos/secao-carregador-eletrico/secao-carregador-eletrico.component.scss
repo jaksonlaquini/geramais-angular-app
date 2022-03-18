@@ -1,0 +1,29 @@
+.font-titulo {
+  font-family: Open Sans;
+  font-style: normal;
+}
+
+.div-texto {
+  background: linear-gradient(180deg, #FF7A00 0%, rgba(216, 133, 57, 0) 100%);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.titulo {
+  color: #001c64;
+  font-size: 30px;
+  text-align: center;
+  line-height: 53px;
+  font-weight: bold;
+}
+
+.sub-titulo {
+  color: #242222;
+  font-size: 19px;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.img {
+  height: 300px;
+  min-height: 200px;
+}

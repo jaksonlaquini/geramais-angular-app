@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { QuemSomosComponent } from './quem-somos.component';
 import { FundadorComponent } from './fundador/fundador.component';
 import { ServicosComponent } from './servicos/servicos.component';
+import { SecaoCarregadorEletricoComponent } from './secao-carregador-eletrico/secao-carregador-eletrico.component';
 
 @NgModule({
     imports: [
@@ -16,7 +17,7 @@ import { ServicosComponent } from './servicos/servicos.component';
         RouterModule,
         NgbModule,
     ],
-    declarations: [ QuemSomosComponent, FundadorComponent, ServicosComponent ],
+    declarations: [ QuemSomosComponent, FundadorComponent, ServicosComponent, SecaoCarregadorEletricoComponent ],
     exports: [ QuemSomosComponent, FundadorComponent ],
     providers: []
 })

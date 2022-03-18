@@ -1,0 +1,75 @@
+<div class="mb-20 container-orcamento align-items-center">
+  <div class="row ">
+    <div class="col text-center div-formulario">
+      <h4 class="texto-titulo-topico">Orçamento</h4>
+      <hr class="linha-servico">
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label class="negrito-600" for="exampleFormControlSelect1">Informe o serviço que deseja solicitar:</label>
+          <select class="form-control" [(ngModel)]="orcamento.servico" placeholder="teste" id="exampleFormControlSelect1">
+            <option>Selecione um serviço</option>
+            <option>Energia Solar</option>
+            <option>Consultoria</option>
+            <option>Manutenção</option>
+            <option>Projetos Fotovoltaicos</option>
+            <option>Instalação</option>
+            <option>Outros</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label class="negrito-600" for="exampleFormControlInput1">Nome*</label>
+          <input class="form-control" [(ngModel)]="orcamento.nome" placeholder="Ex:José da Silva " type="text">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label class="negrito-600" for="exampleFormControlInput1">Email</label>
+          <input type="email"  [(ngModel)]="orcamento.email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="example-tel-input" class="negrito-600 form-control-label">Telefone*</label>
+          <input class="form-control" type="text" mask='(00) 00000-0000'  [(ngModel)]="orcamento.telefone" placeholder="(99) 99999-9999" id="example-tel-input" required
+            maxlength="15">
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="form-group">
+          <label for="endereco" class="form-control-label negrito-600">Endereço*</label>
+          <input class="form-control" type="text"  [(ngModel)]="orcamento.endereco" placeholder="Rua/Av/ Outros, Nº, Bairro, Cidade, Estado" id="endereco"
+            required maxlength="15">
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="form-group">
+          <label class="negrito-600" for="exampleFormControlTextarea1">Mensagem</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1"  [(ngModel)]="orcamento.mensagem" placeholder="Deixe-nos um recado ;)"
+            rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <label class="negrito-600">Anexe uma cópia da sua conta de energia aqui:</label>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="customFileLang" >
+          <label class="custom-file-label" for="customFileLang">Selecione um arquivo</label>
+        </div>
+      </div>
+
+      <div class="col-md-12 div-btn-orcamento">
+        <button type="submit" class="btn btn-secondary" (click)="limparOrcamento()">Limpar</button>
+        <button type="button" class="btn btn-primary" (click)="enviarOrcamento()">Enviar</button>
+      </div>
+    </div>
+</div>
