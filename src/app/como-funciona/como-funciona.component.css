@@ -1,15 +1,15 @@
-.btn-style-custom{
-  background-color: #D9D9D9;
+.btn-style-custom {
+  background-color: #d9d9d9;
   box-shadow: none;
   color: black;
 }
-.accordion-button:not(.collapsed)::after{
+.accordion-button:not(.collapsed)::after {
   background-image: url("../../assets/img/como-funciona/pic-.png");
 }
-.accordion-button::after{
+.accordion-button::after {
   background-image: url("../../assets/img/como-funciona/pic+.png");
 }
-.div-accordion-custom{
+.div-accordion-custom {
   margin: 5px;
 }
 
@@ -24,11 +24,20 @@
   margin-left: auto;
   min-height: 100vh;
 }
-.align-items-self-custom{
-  align-self: flex-end;;
+.align-items-self-custom {
+  align-self: flex-end;
 }
-.perguntas-frequentes-style{
+.perguntas-frequentes-style {
   border-bottom: dotted;
-  border-color: #FF9737;
+  border-color: #ff9737;
   width: 285px;
+}
+.div-img-info {
+  margin-top: 12%;
+  display: flex;
+  justify-content: center;
+}
+
+.img-info{
+  width: 55%;
 }
