@@ -3,12 +3,15 @@
     <div class="row align-items-center justify-content-center">
       <div class="col-lg-10 text-center mt-30">
         <h4 class="texto-titulo-topico">Depoimentos</h4>
-        <hr class="linha-servico">
+        <div class="linha-titulo-div">
+          <hr class="linha-depoimento linha-titulo-orange">
+        </div>
       </div>
     </div>
-    <div class="row align-items-center justify-content-center mb-20" >
-      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
-        (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+    <div class="row align-items-center justify-content-center mb-20">
+      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+        (beforeChange)="beforeChange($event)">
 
         <div ngxSlickItem class="slide col-lg-2 text-center card-depoimento" *ngFor="let depoimento of listaDepoimento">
           <h2 class="texto-titulo-card-depoimento">{{depoimento.nomeCliente}}</h2>
