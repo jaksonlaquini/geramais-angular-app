@@ -13,7 +13,7 @@ export class ComoFuncionaComponent implements OnInit {
     this.perguntasFrequentes = [
       {
         id: 1,
-        pergunta: '2- Qual é a validade dos créditos de energia solar?',
+        pergunta: '1- A energia Solar funciona em dias chuvosos?',
         resposta: `Sim! Mesmo em períodos que o dia não está ensolarado, os painéis fotovoltaicos conseguem funcionar. Isso porque, a conversão de eletricidade das placas se dá por meio da radiação do sol, e não pela temperatura que está fazendo no momento.
           Ou seja, você não precisa se preocupar, pois em qualquer ocasião será possível produzir a energia para o funcionamento dos aparelhos na sua residência ou empresa. Em situações extremas, como aquelas em que nos deparamos com chuvas por períodos prolongados ou quando há uma alta quantidade de nuvens no céu, é possível que os raios de sol não consigam atingir a superfície dos painéis fotovoltaicos como de costume. Nesses momentos, o que acontece é uma diminuição no nível de energia que será gerada no dia.
           `,
