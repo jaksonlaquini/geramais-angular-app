@@ -14,6 +14,7 @@ import { OrcamentoComponent } from './orcamento/orcamento.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { MessageService } from './core/services/message.service';
+import { ContatoComponent } from './contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MessageService } from './core/services/message.service';
     NavbarComponent,
     FooterComponent,
     ComoFuncionaComponent,
-    OrcamentoComponent
+    OrcamentoComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,

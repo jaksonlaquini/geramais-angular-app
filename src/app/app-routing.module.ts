@@ -1,3 +1,4 @@
+import { ContatoComponent } from './contato/contato.component';
 import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'quem-somos', component: QuemSomosComponent },
   { path: 'como-funciona', component: ComoFuncionaComponent },
   { path: 'orcamento', component: OrcamentoComponent },
+  { path: 'contato', component: ContatoComponent },
   // { path: 'register',           component: SignupComponent },
   // { path: 'landing',          component: LandingComponent },
   // { path: 'login',          component: LoginComponent },
