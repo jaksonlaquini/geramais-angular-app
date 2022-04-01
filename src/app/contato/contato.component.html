@@ -1,0 +1,45 @@
+<div class="mb-20 container-contato align-items-center">
+  <div class="row ">
+    <div class="col text-center div-formulario">
+      <h4 class="texto-titulo-topico">Contato</h4>
+      <hr class="linha-servico">
+    </div>
+  </div>
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label class="negrito-600" for="exampleFormControlInput1">Nome*</label>
+          <input class="form-control" [(ngModel)]="contato.nome" placeholder="Ex:José da Silva " type="text">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label class="negrito-600" for="exampleFormControlInput1">Email</label>
+          <input type="email"  [(ngModel)]="contato.email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="example-tel-input" class="negrito-600 form-control-label">Telefone*</label>
+          <input class="form-control" type="text" mask='(00) 00000-0000'  [(ngModel)]="contato.telefone" placeholder="(99) 99999-9999" id="example-tel-input" required
+            maxlength="15">
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="form-group">
+          <label class="negrito-600" for="exampleFormControlTextarea1">Mensagem</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1"  [(ngModel)]="contato.mensagem" placeholder="Deixe-nos um recado ;)"
+            rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="col-md-12 div-btn-contato">
+        <button type="submit" class="btn btn-secondary" (click)="limparContato()">Limpar</button>
+        <button type="button" class="btn btn-primary" (click)="enviarContato()">Enviar</button>
+      </div>
+    </div>
+</div>
