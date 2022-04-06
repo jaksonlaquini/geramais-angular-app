@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { MessageService } from './core/services/message.service';
 import { ContatoComponent } from './contato/contato.component';
+import { TrabalheConoscoModalComponent } from './contato/trabalhe-conosco-modal/trabalhe-conosco-modal.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContatoComponent } from './contato/contato.component';
     FooterComponent,
     ComoFuncionaComponent,
     OrcamentoComponent,
-    ContatoComponent
+    ContatoComponent,
+    TrabalheConoscoModalComponent
   ],
   imports: [
     BrowserModule,

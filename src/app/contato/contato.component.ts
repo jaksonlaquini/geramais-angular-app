@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { MessageService } from '../core/services/message.service';
 import { ContatoModel } from './model/contato.model';
 
@@ -10,7 +11,8 @@ import { ContatoModel } from './model/contato.model';
 export class ContatoComponent implements OnInit {
 
   contato: ContatoModel = new ContatoModel();
-  constructor(private messageService: MessageService) { }
+  closeResult: string = '';
+  constructor(private messageService: MessageService,private modalService: NgbModal) { }
 
   ngOnInit(): void {
     this.iniciarContato();
@@ -29,4 +31,25 @@ export class ContatoComponent implements OnInit {
     this.contato =  new ContatoModel();
   }
 
+  open(content:any, type:any, modalDimension:any) {
+    if (modalDimension === 'sm' && type === 'modal_mini') {
+        this.modalService.open(content, { windowClass: 'modal-mini', size: 'sm', centered: true }).result.then((result) => {
+            this.closeResult = 'Closed with: $result';
+        }, (reason) => {
+            this.closeResult = 'Dismissed $this.getDismissReason(reason)';
+        });
+    } else if (modalDimension === '' && type === 'Notification') {
+      this.modalService.open(content, { windowClass: 'modal-danger', centered: true }).result.then((result) => {
+          this.closeResult = 'Closed with: $result';
+      }, (reason) => {
+          this.closeResult = 'Dismissed $this.getDismissReason(reason)';
+      });
+    } else {
+        this.modalService.open(content,{ centered: true }).result.then((result) => {
+            this.closeResult = 'Closed with: $result';
+        }, (reason) => {
+            this.closeResult = 'Dismissed $this.getDismissReason(reason)';
+        });
+    }
+}
 }
