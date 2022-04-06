@@ -15,6 +15,8 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { MessageService } from './core/services/message.service';
 import { ContatoComponent } from './contato/contato.component';
+import { ProjetosComponent } from './projetos/projetos.component';
+import { DetalheProjetosComponent } from './projetos/detalhe-projetos/detalhe-projetos.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ContatoComponent } from './contato/contato.component';
     FooterComponent,
     ComoFuncionaComponent,
     OrcamentoComponent,
-    ContatoComponent
+    ContatoComponent,
+    ProjetosComponent,
+    DetalheProjetosComponent
   ],
   imports: [
     BrowserModule,
