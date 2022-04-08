@@ -20,10 +20,10 @@ export class DetalheProjetosComponent implements OnInit {
 
     switch (tipo) {
       case TipoProjeto.RESIDENCIAL.toString():
-        this.titulo += 'Residencial';
+        this.titulo += 'Comercial';
         break;
       case TipoProjeto.EMPRESARIAL.toString():
-        this.titulo += 'Empresarial';
+        this.titulo += 'Residencial';
         break;
       default:
         this.titulo += 'Rural';
