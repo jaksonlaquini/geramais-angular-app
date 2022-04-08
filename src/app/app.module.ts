@@ -16,6 +16,7 @@ import { CommonModule } from '@angular/common';
 import { MessageService } from './core/services/message.service';
 import { ContatoComponent } from './contato/contato.component';
 import { TrabalheConoscoModalComponent } from './contato/trabalhe-conosco-modal/trabalhe-conosco-modal.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TrabalheConoscoModalComponent } from './contato/trabalhe-conosco-modal/
     ComoFuncionaComponent,
     OrcamentoComponent,
     ContatoComponent,
-    TrabalheConoscoModalComponent
+    TrabalheConoscoModalComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,46 @@
+.container-blog {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.div-conteudo-pagina{
+  margin-top: 150px;
+}
+.conteudo-principal {
+  background-color: #d9d9d9;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.conteudo-blog {
+  display: flex;
+}
+.conteudo-foto {
+  background-color: #001c64;
+  height: 200px;
+  width: 25%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conteudo-texto {
+  width: 75%;
+  padding: 10px;
+}
+.conteudo-titulo-noticia {
+  font-family: Open Sans;
+  font-weight: bold;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.conteudo-texto-noticia {
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
