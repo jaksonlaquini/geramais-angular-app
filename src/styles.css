@@ -51,3 +51,15 @@
 .mb-20 {
   margin-bottom: 20px;
 }
+
+.display {
+  display: flex;
+}
+
+.float-right {
+  float: right;
+}
+
+.cursor {
+  cursor: pointer;
+}
