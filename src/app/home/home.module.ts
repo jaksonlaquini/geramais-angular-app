@@ -9,6 +9,7 @@ import { VantagemEnergiaSolarComponent } from './vantagem-energia-solar/vantagem
 import { DepoimentosComponent } from './depoimentos/depoimentos.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NossosServicosComponent } from './nossos-servicos/nossos-servicos.component';
+import { SecaoProjetosComponent } from './secao-projetos/secao-projetos.component';
 
 @NgModule({
     imports: [
@@ -19,7 +20,7 @@ import { NossosServicosComponent } from './nossos-servicos/nossos-servicos.compo
         NgbModule,
         SlickCarouselModule
     ],
-    declarations: [ HomeComponent, NossosServicosComponent, VantagemEnergiaSolarComponent, DepoimentosComponent ],
+    declarations: [ HomeComponent, NossosServicosComponent, VantagemEnergiaSolarComponent, DepoimentosComponent, SecaoProjetosComponent ],
     exports: [ HomeComponent ],
     providers: []
 })

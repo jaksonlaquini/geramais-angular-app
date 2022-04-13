@@ -3,6 +3,9 @@
   margin-top: 30px;
 }
 
+.mt-50 {
+  margin-top: 50px;
+}
 
 .titulo-topico {
   font-weight: 100;
@@ -43,4 +46,20 @@
 .texto-titulo-topico {
   font-weight: 100;
   line-height: 0.2;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.display {
+  display: flex;
+}
+
+.float-right {
+  float: right;
+}
+
+.cursor {
+  cursor: pointer;
 }

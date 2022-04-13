@@ -15,6 +15,8 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { MessageService } from './core/services/message.service';
 import { ContatoComponent } from './contato/contato.component';
+import { ProjetosComponent } from './projetos/projetos.component';
+import { DetalheProjetosComponent } from './projetos/detalhe-projetos/detalhe-projetos.component';
 import { TrabalheConoscoModalComponent } from './contato/trabalhe-conosco-modal/trabalhe-conosco-modal.component';
 import { BlogComponent } from './blog/blog.component';
 
@@ -26,8 +28,14 @@ import { BlogComponent } from './blog/blog.component';
     ComoFuncionaComponent,
     OrcamentoComponent,
     ContatoComponent,
+<<<<<<< HEAD
     TrabalheConoscoModalComponent,
     BlogComponent
+=======
+    ProjetosComponent,
+    DetalheProjetosComponent,
+    TrabalheConoscoModalComponent
+>>>>>>> 079819a8542df9d00bbd87381e0416a2c3280598
   ],
   imports: [
     BrowserModule,

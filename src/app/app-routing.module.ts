@@ -8,11 +8,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { OrcamentoComponent } from './orcamento/orcamento.component';
 import { QuemSomosComponent } from './quem-somos/quem-somos.component';
+import { ProjetosComponent } from './projetos/projetos.component';
+import { DetalheProjetosComponent } from './projetos/detalhe-projetos/detalhe-projetos.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'quem-somos', component: QuemSomosComponent },
   { path: 'como-funciona', component: ComoFuncionaComponent },
+  { path: 'projetos', component: ProjetosComponent },
+  { path: 'detalhe-projeto/:tipoProjeto', component: DetalheProjetosComponent },
   { path: 'orcamento', component: OrcamentoComponent },
   { path: 'contato', component: ContatoComponent },
   { path: 'blog', component: BlogComponent },
