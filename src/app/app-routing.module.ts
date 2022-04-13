@@ -1,3 +1,4 @@
+import { BlogNoticiaComponent } from './blog/blog-noticia/blog-noticia.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContatoComponent } from './contato/contato.component';
 import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'orcamento', component: OrcamentoComponent },
   { path: 'contato', component: ContatoComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'blog-noticia', component: BlogNoticiaComponent },
   // { path: 'register',           component: SignupComponent },
   // { path: 'landing',          component: LandingComponent },
   // { path: 'login',          component: LoginComponent },

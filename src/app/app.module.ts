@@ -19,6 +19,7 @@ import { ProjetosComponent } from './projetos/projetos.component';
 import { DetalheProjetosComponent } from './projetos/detalhe-projetos/detalhe-projetos.component';
 import { TrabalheConoscoModalComponent } from './contato/trabalhe-conosco-modal/trabalhe-conosco-modal.component';
 import { BlogComponent } from './blog/blog.component';
+import { BlogNoticiaComponent } from './blog/blog-noticia/blog-noticia.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { BlogComponent } from './blog/blog.component';
     BlogComponent,
     ProjetosComponent,
     DetalheProjetosComponent,
-    TrabalheConoscoModalComponent
+    TrabalheConoscoModalComponent,
+    BlogNoticiaComponent
   ],
   imports: [
     BrowserModule,
