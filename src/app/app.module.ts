@@ -28,14 +28,11 @@ import { BlogComponent } from './blog/blog.component';
     ComoFuncionaComponent,
     OrcamentoComponent,
     ContatoComponent,
-<<<<<<< HEAD
     TrabalheConoscoModalComponent,
-    BlogComponent
-=======
+    BlogComponent,
     ProjetosComponent,
     DetalheProjetosComponent,
     TrabalheConoscoModalComponent
->>>>>>> 079819a8542df9d00bbd87381e0416a2c3280598
   ],
   imports: [
     BrowserModule,
