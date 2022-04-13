@@ -17,6 +17,7 @@ import { MessageService } from './core/services/message.service';
 import { ContatoComponent } from './contato/contato.component';
 import { ProjetosComponent } from './projetos/projetos.component';
 import { DetalheProjetosComponent } from './projetos/detalhe-projetos/detalhe-projetos.component';
+import { TrabalheConoscoModalComponent } from './contato/trabalhe-conosco-modal/trabalhe-conosco-modal.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DetalheProjetosComponent } from './projetos/detalhe-projetos/detalhe-pr
     OrcamentoComponent,
     ContatoComponent,
     ProjetosComponent,
-    DetalheProjetosComponent
+    DetalheProjetosComponent,
+    TrabalheConoscoModalComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,95 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <label class="negrito-600" for="exampleFormControlInput1">Nome*</label>
+      <input
+        class="form-control"
+        [(ngModel)]="trabalheConosco.nome"
+        placeholder="Ex:José da Silva "
+        type="text"
+      />
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="form-group">
+      <label class="negrito-600" for="exampleFormControlInput1">Email*</label>
+      <input
+        type="email"
+        [(ngModel)]="trabalheConosco.email"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="name@example.com"
+      />
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="example-tel-input" class="negrito-600 form-control-label"
+        >Telefone*</label
+      >
+      <input
+        class="form-control"
+        type="text"
+        mask="(00) 00000-0000"
+        [(ngModel)]="trabalheConosco.telefone"
+        placeholder="(99) 99999-9999"
+        id="example-tel-input"
+        required
+        maxlength="15"
+      />
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="form-group">
+      <label class="negrito-600" for="exampleFormControlInput1"
+        >Área de interesse*</label
+      >
+      <select
+        class="form-control"
+        [(ngModel)]="trabalheConosco.areaInteresse"
+        placeholder="teste"
+        id="exampleFormControlSelect1"
+      >
+        <option value="1">Selecione uma area</option>
+        <option value="2">Área</option>
+        <option value="3">Área</option>
+        <option value="4">Área</option>
+        <option value="5">Área</option>
+        <option value="6">Área</option>
+        <option value="7">Área</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <label class="negrito-600">Currículo:*</label>
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="customFileLang" >
+      <label class="custom-file-label" for="customFileLang">Selecione um arquivo</label>
+    </div>
+  </div>
+  <div>
+    <div class="form-group">
+      <label class="negrito-600" for="exampleFormControlTextarea1"
+        >Apresentação</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        [(ngModel)]="trabalheConosco.apresentacao"
+        placeholder="Sou Mateus Silva, tenho x anos e habilidades....)"
+        rows="3"
+      ></textarea>
+    </div>
+    <div class="col-md-12 div-btn-contato">
+      <button type="submit" class="btn btn-secondary" (click)="limpar()">
+        Limpar
+      </button>
+      <button type="button" class="btn btn-primary" (click)="enviar()">
+        Enviar
+      </button>
+    </div>
+  </div>
+</div>

@@ -33,3 +33,16 @@
 .div-ver-mais {
   padding-right: 15%;
 }
+
+.mouse h4:hover {
+ color: orange;
+}
+
+.mouse i:hover {
+  color: orange;
+ }
+
+
+ .mouse:hover {
+  color: orange;
+ }
