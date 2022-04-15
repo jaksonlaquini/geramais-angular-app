@@ -3,12 +3,15 @@
   box-shadow: none;
   color: black;
 }
+
 .accordion-button:not(.collapsed)::after {
   background-image: url("../../assets/img/como-funciona/pic-.png");
 }
+
 .accordion-button::after {
   background-image: url("../../assets/img/como-funciona/pic+.png");
 }
+
 .div-accordion-custom {
   margin: 5px;
 }
@@ -16,6 +19,7 @@
 .mb-20 {
   margin-bottom: 20px;
 }
+
 .container-como-funciona {
   width: 100%;
   padding-right: 15px;
@@ -24,14 +28,17 @@
   margin-left: auto;
   min-height: 100vh;
 }
+
 .align-items-self-custom {
   align-self: flex-end;
 }
+
 .perguntas-frequentes-style {
   border-bottom: dotted;
   border-color: #ff9737;
   width: 285px;
 }
+
 .div-img-info {
   margin-top: 12%;
   display: flex;
@@ -39,5 +46,15 @@
 }
 
 .img-info{
-  width: 55%;
+  width: 45%;
+}
+
+.accordion-body {
+  text-align: justify;
+  padding-top: 0px;
+}
+
+.font-weight {
+  font-weight: 700;
+  font-size: 17px;
 }

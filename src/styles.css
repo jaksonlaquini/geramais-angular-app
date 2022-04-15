@@ -48,6 +48,13 @@
   line-height: 0.2;
 }
 
+.texto-titulo-topico-projeto {
+  font-weight: 100;
+  line-height: 0.2;
+  font-size: 40px;
+  font-weight: 700;
+}
+
 .mb-20 {
   margin-bottom: 20px;
 }
