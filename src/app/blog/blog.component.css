@@ -5,7 +5,7 @@
   margin-right: auto;
   margin-left: auto;
 }
-.div-conteudo-pagina{
+.div-conteudo-pagina {
   margin-top: 150px;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
   height: 200px;
   margin-bottom: 10px;
 }
-.conteudo-principal:hover{
+.conteudo-principal:hover {
   cursor: pointer;
 }
 .conteudo-blog {
@@ -36,6 +36,9 @@
 .conteudo-texto {
   width: 75%;
   padding: 10px;
+  max-height: 200px;
+  position: relative;
+  overflow: auto;
 }
 .conteudo-titulo-noticia {
   font-family: Open Sans;
