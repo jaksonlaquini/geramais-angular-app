@@ -1,25 +1,29 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { AngularFireModule } from '@angular/fire';
+import { SETTINGS as FIRESTORE_SETTINGS } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
+import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BlogNoticiaComponent } from './blog/blog-noticia/blog-noticia.component';
+import { BlogComponent } from './blog/blog.component';
+import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
+import { ContatoComponent } from './contato/contato.component';
+import { TrabalheConoscoModalComponent } from './contato/trabalhe-conosco-modal/trabalhe-conosco-modal.component';
+import { MessageService } from './core/services/message.service';
+import { HomeModule } from './home/home.module';
+import { OrcamentoComponent } from './orcamento/orcamento.component';
+import { DetalheProjetosComponent } from './projetos/detalhe-projetos/detalhe-projetos.component';
+import { ProjetosComponent } from './projetos/projetos.component';
+import { QuemSomosModule } from './quem-somos/quem-somos.module';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HomeModule } from './home/home.module';
-import { QuemSomosModule } from './quem-somos/quem-somos.module';
-import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
-import { OrcamentoComponent } from './orcamento/orcamento.component';
-import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import { MessageService } from './core/services/message.service';
-import { ContatoComponent } from './contato/contato.component';
-import { ProjetosComponent } from './projetos/projetos.component';
-import { DetalheProjetosComponent } from './projetos/detalhe-projetos/detalhe-projetos.component';
-import { TrabalheConoscoModalComponent } from './contato/trabalhe-conosco-modal/trabalhe-conosco-modal.component';
-import { BlogComponent } from './blog/blog.component';
-import { BlogNoticiaComponent } from './blog/blog-noticia/blog-noticia.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,7 @@ import { BlogNoticiaComponent } from './blog/blog-noticia/blog-noticia.component
     ProjetosComponent,
     DetalheProjetosComponent,
     TrabalheConoscoModalComponent,
-    BlogNoticiaComponent
+    BlogNoticiaComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,8 +50,16 @@ import { BlogNoticiaComponent } from './blog/blog-noticia/blog-noticia.component
     CommonModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireStorageModule,
   ],
-  providers: [MessageService],
+  providers: [
+    MessageService,
+    {
+      provide: FIRESTORE_SETTINGS,
+      useValue: { ignoreUndefinedProperties: true },
+    },
+  ],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

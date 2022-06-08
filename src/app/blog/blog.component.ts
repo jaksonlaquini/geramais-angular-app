@@ -1,5 +1,7 @@
-import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { BlogService } from '../core/services/blog.service';
+import { BlogNoticia } from '../projetos/model/blogNoticia';
 
 @Component({
   selector: 'app-blog',
@@ -7,10 +9,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.css'],
 })
 export class BlogComponent implements OnInit {
-  constructor(private router: Router) {}
+  listaBlog: BlogNoticia[] = [];
+  constructor(private router: Router, private blogService: BlogService) {}
 
-  ngOnInit(): void {}
-  abrirNoticia() {
-    this.router.navigate(['/blog-noticia'])
+  ngOnInit(): void {
+    this.buscarBlog();
+  }
+
+  abrirNoticia(): void {
+    this.router.navigate(['/blog-noticia']);
+  }
+
+  private async buscarBlog(): Promise<void> {
+    const result = await this.blogService.getBlog().then();
+
+    if (result) {
+      this.listaBlog = result.map((x) => x);
+    }
   }
 }

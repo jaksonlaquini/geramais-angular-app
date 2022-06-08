@@ -1,8 +1,11 @@
+import { TipoProjeto } from './tipo-projeto.enum';
+
 export class Projeto {
-  local!: string;
+  cliente!: string;
   endereco!: string;
   qtdPlacas!: number;
-  potencia!: number;
-  economiaAnual!: number;
-  imagem!: string;
+  potencia!: string;
+  economiaAnual!: string;
+  imagemUrl!: string;
+  tipoProjeto!: TipoProjeto;
 }
