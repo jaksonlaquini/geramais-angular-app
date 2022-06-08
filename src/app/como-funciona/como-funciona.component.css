@@ -39,12 +39,6 @@
   width: 285px;
 }
 
-.div-img-info {
-  margin-top: 12%;
-  display: flex;
-  justify-content: center;
-}
-
 .img-info{
   width: 45%;
 }
@@ -57,4 +51,38 @@
 .font-weight {
   font-weight: 700;
   font-size: 17px;
+}
+
+@media only screen and (min-width: 960px) {
+  .div-img-info {
+    margin-top: 12%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+@media only screen and (max-width: 959px) {
+  .div-img-info {
+    margin-top: 17%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .div-img-info {
+    margin-top: 27%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .div-img-info {
+    margin-top: 37%;
+    display: flex;
+    justify-content: center;
+  }
 }
