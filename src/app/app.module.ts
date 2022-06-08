@@ -24,6 +24,7 @@ import { ProjetosComponent } from './projetos/projetos.component';
 import { QuemSomosModule } from './quem-somos/quem-somos.module';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     DetalheProjetosComponent,
     TrabalheConoscoModalComponent,
     BlogNoticiaComponent,
+    LoadingSpinnerComponent,
   ],
   imports: [
     BrowserModule,
