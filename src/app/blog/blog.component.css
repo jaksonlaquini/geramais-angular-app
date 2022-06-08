@@ -31,7 +31,9 @@
 }
 
 .conteudo-foto {
-  background-color: #001c64;
+  /* background-color: #001c64; */
+  background-image: url("../../assets/img/logo/logonew.png");
+  background-repeat: round;
   height: 280px;
   width: 25%;
   color: white;
