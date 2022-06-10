@@ -61,11 +61,14 @@ p{
 }
 .img-noticia{
   height: 200px;
-  width: 200px;
+  width: 232px;
   background-color: #d9d9d9;
   border-radius: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px;
+}
+.justify-center-orientation{
+  justify-content: center;
 }
