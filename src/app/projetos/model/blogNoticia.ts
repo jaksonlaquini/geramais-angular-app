@@ -14,5 +14,6 @@ export class BlogNoticiaCompleta {
   imagemInfo1Url!: string;
   imagemInfo2Url!: string;
   imagemInfo3Url!: string;
+  fonte!: string;
   idBlog!: string;
 }

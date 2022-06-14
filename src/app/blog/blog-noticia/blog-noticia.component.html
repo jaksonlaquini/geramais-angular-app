@@ -2,70 +2,29 @@
   <div class="row">
     <div class="container-blog div-conteudo-pagina">
       <div class="conteudo-principal">
-        <div class="conteudo-blog">FOTO</div>
+        <div class="conteudo-blog"> <img [src]="blogCompleto?.imagemCabecalhoUrl" class="img img-blog" /></div>
       </div>
-      <h5>
-        Imóveis com sistemas fotovoltaicos são mais valorizados no mercado
-        imobiliário
-      </h5>
-      <p>
-        Uma pesquisa realizada pela Effective Home, especialista em painéis
-        solares, indicou que a instalação de geradores fotovoltaicos pode
-        aumentar o valor de um imóvel em até R$ 200 mil, na Europa. No Reino
-        Unido, por exemplo, imóveis com energia solar são vendidos por 14% a
-        mais, um acréscimo de cerca de 32 mil libras, com base no preço médio de
-        uma casa naquele país.
+      <h4>
+        {{blogCompleto?.tituloNoticiaCompleta}}
+      </h4>
+      <p class="desc-completo">
+        {{blogCompleto?.descricaoNoticiaCompleta}}
       </p>
-      <p>
-        Mas a mesma análise mostrou que o acréscimo pode ser ainda maior em
-        outras localidades, como Londres, onde as casas podem ter um aumento de
-        90 mil libras após a instalação de painéis solares. Em Bristol, o
-        aumento pode chegar a 45 mil libras, em Edimburgo a 40 mil, em Leicester
-        a mais de 31 mil e em Manchester a cerca de 29 mil libras ou mais.
-      </p>
-      <p>
-        As razões para esta valorização são muitas. Uma delas é que os
-        proprietários chegam a economizar cerca de 27 mil libras em contas de
-        energia em um período de 30 anos. Essa economia é muito importante nos
-        dias de hoje, já que os britânicos estão ficando mais tempo em casa por
-        causa do lockdown pela pandemia de Covid-19 e, por isso, a conta de
-        energia teve um aumento de 37%. Além disso, os proprietários de casas
-        com painéis solares têm a opção de vender a energia excedente à rede
-        nacional, principalmente no verão, quando há mais horas de luz do dia e
-        o consumo diminui.
-      </p>
-      <p>
-        Segundo Dan Graby, diretor da Effective Home, como os preços das casas
-        estão subindo, é interessante avaliar o impacto da energia solar e os
-        benefícios que ela traz, como a redução do valor das contas de energia e
-        da emissão de carbono. “Esperamos que os dados da nossa pesquisa tenham
-        um impacto positivo para os vendedores de imóveis no Reino Unido, pois
-        talvez eles não saibam que fazer mudanças relacionadas à eficiência
-        energética pode aumentar consideravelmente a cotação das propriedades.
-        Os compradores estão em busca de casas menos vulneráveis aos aumentos de
-        tarifas de energia e também estão mais preocupados com o aquecimento
-        global e o meio ambiente.”
-      </p>
-      <p>
-        Os ganhos de capital com propriedades com painéis solares podem ser
-        enormes no Reino Unido. As casas avaliadas inicialmente em 100 mil
-        libras tiveram um aumento de 14 mil, e as avaliadas em 2 milhões de
-        libras tiveram um acréscimo de 280 mil.
-      </p>
+
       <p>
         Fonte:
-        <a
-          href="https://www.portalsolar.com.br/blog-solar/energia-renovavel/pesquisa-indica-que-imoveis-com-sistemas-fotovoltaicos-sao-mais-valorizados-no-mercado-imobiliario.html"
-          >https://www.portalsolar.com.br/blog-solar/energia-renovavel/pesquisa-indica-que-imoveis-com-sistemas-fotovoltaicos-sao-mais-valorizados-no-mercado-imobiliario.html</a
-        >
+        <a href="blogCompleto?.fonte">{{blogCompleto?.fonte}}</a>
       </p>
 
       <div class="footer-img">
-        <div >
+        <div>
           <div class="row justify-center-orientation">
-            <div class="img-noticia col-lg-3">FOTO</div>
-            <div class="img-noticia col-lg-3">FOTO</div>
-            <div class="img-noticia col-lg-3">FOTO</div>
+            <div class="img-noticia col-lg-3"> <img [src]="blogCompleto?.imagemInfo1Url"
+                class="img img-blog img-noticia" /></div>
+            <div class="img-noticia col-lg-3"> <img [src]="blogCompleto?.imagemInfo2Url"
+                class="img img-blog img-noticia" /></div>
+            <div class="img-noticia col-lg-3"> <img [src]="blogCompleto?.imagemInfo3Url"
+                class="img img-blog img-noticia" /></div>
           </div>
         </div>
       </div>

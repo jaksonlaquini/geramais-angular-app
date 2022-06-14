@@ -67,19 +67,14 @@ export class BlogService {
   }
 
   // tslint:disable-next-line:typedef
-  async getBlogNoticiaCompleta(
-    idNoticiaCompleta: string
-  ): Promise<BlogNoticiaCompleta[]> {
+  async getBlogNoticiaCompleta(idNoticiaCompleta: string): Promise<any> {
     const blogNoticiaCompleta = (
       await this.afs
-        .collection<BlogNoticiaCompleta>('blogNoticiaCompleta', (ref) =>
-          ref.where('id', '==', idNoticiaCompleta)
-        )
+        .collection<BlogNoticiaCompleta>('blog-completo')
         .get()
         .toPromise()
     ).docs.map((x) => {
-      const dados = x.data();
-      return { ...dados };
+      return x.data();
     });
 
     return blogNoticiaCompleta;

@@ -10,10 +10,7 @@ import { MessageService } from '../core/services/message.service';
 export class ProjetosComponent implements OnInit {
   constructor(private router: Router, private me: MessageService) {}
 
-  ngOnInit(): void {
-    // this.me.criarTeste();
-    //this.me.getTeste();
-  }
+  ngOnInit(): void {}
 
   public abrirDetalheTipoProjeto(tipoProjeto: number): void {
     this.router.navigate(['/detalhe-projeto', tipoProjeto]);

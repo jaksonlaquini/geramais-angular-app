@@ -16,8 +16,8 @@ export class BlogComponent implements OnInit {
     this.buscarBlog();
   }
 
-  abrirNoticia(): void {
-    this.router.navigate(['/blog-noticia']);
+  abrirNoticia(idBlog: string): void {
+    this.router.navigate(['/blog-noticia', idBlog]);
   }
 
   private async buscarBlog(): Promise<void> {
