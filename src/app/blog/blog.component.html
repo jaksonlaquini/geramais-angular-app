@@ -4,7 +4,8 @@
       <div class="conteudo-principal" *ngFor="let blog of listaBlog">
         <div (click)="abrirNoticia(blog.id)" class="conteudo-blog">
           <div class="conteudo-foto">
-            <img [src]="blog.imagemUrl" class="img img-blog" />
+            <img *ngIf="blog.imagemUrl" [src]="blog.imagemUrl" class="img img-blog" />
+            <img *ngIf="!blog.imagemUrl" src="../../assets/img/sem-foto.jpg" class="img img-blog" />
           </div>
           <div class="conteudo-texto">
             <P class="conteudo-titulo-noticia">

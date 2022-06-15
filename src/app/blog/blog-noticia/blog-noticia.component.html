@@ -2,7 +2,10 @@
   <div class="row">
     <div class="container-blog div-conteudo-pagina">
       <div class="conteudo-principal">
-        <div class="conteudo-blog"> <img [src]="blogCompleto?.imagemCabecalhoUrl" class="img img-blog" /></div>
+        <div class="conteudo-blog"> <img *ngIf="blogCompleto?.imagemCabecalhoUrl"
+            [src]="blogCompleto?.imagemCabecalhoUrl" class="img img-blog" />
+          <img *ngIf="!blogCompleto?.imagemCabecalhoUrl" src="../../assets/img/sem-foto.jpg" class="img img-blog" />
+        </div>
       </div>
       <h4>
         {{blogCompleto?.tituloNoticiaCompleta}}
@@ -19,12 +22,22 @@
       <div class="footer-img">
         <div>
           <div class="row justify-center-orientation">
-            <div class="img-noticia col-lg-3"> <img [src]="blogCompleto?.imagemInfo1Url"
-                class="img img-blog img-noticia" /></div>
-            <div class="img-noticia col-lg-3"> <img [src]="blogCompleto?.imagemInfo2Url"
-                class="img img-blog img-noticia" /></div>
-            <div class="img-noticia col-lg-3"> <img [src]="blogCompleto?.imagemInfo3Url"
-                class="img img-blog img-noticia" /></div>
+            <div class="img-noticia col-lg-3">
+              <img *ngIf="blogCompleto?.imagemInfo1Url" [src]="blogCompleto?.imagemInfo1Url"
+                class="img img-blog img-noticia" />
+              <img *ngIf="!blogCompleto?.imagemInfo1Url" src="../../assets/img/sem-foto.jpg"
+                class="img img-blog img-noticia" />
+            </div>
+            <div class="img-noticia col-lg-3"> <img *ngIf="blogCompleto?.imagemInfo2Url"
+                [src]="blogCompleto?.imagemInfo2Url" class="img img-blog img-noticia" />
+              <img *ngIf="!blogCompleto?.imagemInfo2Url" src="../../assets/img/sem-foto.jpg"
+                class="img img-blog img-noticia" />
+            </div>
+            <div class="img-noticia col-lg-3"> <img *ngIf="blogCompleto?.imagemInfo3Url"
+                [src]="blogCompleto?.imagemInfo3Url" class="img img-blog img-noticia" />
+              <img *ngIf="!blogCompleto?.imagemInfo3Url" src="../../assets/img/sem-foto.jpg"
+                class="img img-blog img-noticia" />
+            </div>
           </div>
         </div>
       </div>
