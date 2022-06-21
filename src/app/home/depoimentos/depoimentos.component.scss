@@ -50,6 +50,7 @@
   padding: 5px;
   line-height: 1.5;
   overflow: auto;
+  max-height: 49px;
 }
 
 .icone-card-servico {
@@ -75,8 +76,11 @@
 
 .div-rating {
   bottom: 0;
-  position: absolute;
-  margin-left: 29px;
+    /* position: absolute; */
+    /* margin-left: 29px; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .slick-slider {
