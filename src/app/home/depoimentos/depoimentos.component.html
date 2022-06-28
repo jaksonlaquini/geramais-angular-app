@@ -12,8 +12,7 @@
       <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
         (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
         (beforeChange)="beforeChange($event)">
-
-        <div ngxSlickItem class="slide col-lg-2 text-center card-depoimento" *ngFor="let depoimento of listaDepoimento">
+        <div ngxSlickItem class="slide text-center card-depoimento" *ngFor="let depoimento of listaDepoimento">
           <h2 class="texto-titulo-card-depoimento">{{depoimento.nomeCliente}}</h2>
           <h4 class="texto-subtitulo-card-depoimento">{{depoimento.local}}</h4>
           <div style="max-height: 80px; overflow: auto;">
