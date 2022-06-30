@@ -1,13 +1,14 @@
-<nav id="navbar-main" class=" div-todo navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
+<nav id="navbar-main"
+  class=" div-todo navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
   <div class="cabecalho">
     <a class="div-logo navbar-brand mr-lg-5" [routerLink]="['/home']">
       <img src="./assets/img/logo/logo.png">
     </a>
     <button class="btn-expandido navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
-          [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+      [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="div-menu navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed" >
+    <div class="div-menu navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
       <div class="navbar-collapse-header">
         <div class="row">
           <div class="col-6 collapse-brand">
@@ -17,7 +18,7 @@
           </div>
           <div class="col-6 collapse-close">
             <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
-                  [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+              [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
               <span></span>
               <span></span>
             </button>
@@ -38,7 +39,7 @@
           </a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link no-caret" data-toggle="dropdown" role="button"  [routerLink]="['/projetos']">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button" [routerLink]="['/projetos']">
             <i class="ni ni-ui-04 d-lg-none"></i>
             <span class="nav-link-inner--text">Projetos</span>
           </a>
@@ -64,25 +65,28 @@
       </ul>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://www.facebook.com/geramaisengenharia" target="_blank" data-toggle="tooltip" title="Facebook">
+          <a class="nav-link nav-link-icon" href="https://www.facebook.com/geramaisenergiasolar" target="_blank"
+            data-toggle="tooltip" title="Facebook">
             <i class="fab fa-facebook-square"></i>
             <span class="nav-link-inner--text d-lg-none">Facebook</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://www.instagram.com/geramaisengenharia/" target="_blank" data-toggle="tooltip" title="Instagram">
+          <a class="nav-link nav-link-icon" href="https://www.instagram.com/geramaisengenharia/" target="_blank"
+            data-toggle="tooltip" title="Instagram">
             <i class="fab fa-instagram"></i>
             <span class="nav-link-inner--text d-lg-none">Instagram</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://www.linkedin.com/company/geramaisengenharia" target="_blank" data-toggle="tooltip" title="Linkedin">
+          <a class="nav-link nav-link-icon" href="https://www.linkedin.com/company/geramaisengenharia" target="_blank"
+            data-toggle="tooltip" title="Linkedin">
             <i class="fab fa-linkedin"></i>
             <span class="nav-link-inner--text d-lg-none">Linkedin</span>
           </a>
         </li>
         <li class="nav-item d-none d-lg-block ml-lg-4">
-          <a  [routerLink]="['/orcamento']" class="btn btn-neutral btn-icon">
+          <a [routerLink]="['/orcamento']" class="btn btn-neutral btn-icon">
             <span class="nav-link-inner--text">Orçamento</span>
           </a>
         </li>

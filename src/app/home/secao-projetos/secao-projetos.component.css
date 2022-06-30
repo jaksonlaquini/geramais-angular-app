@@ -19,10 +19,19 @@
 }
 
 .card-secao-projeto {
-  height: auto;
-  width: 320px;
+  height: 170px;
+  width: 95%;
   border-radius: 10px;
   margin: 10px 10px 10px 10px;
+}
+
+@media (max-width: 1000px) {
+  .card-secao-projeto {
+    height: 370px;
+    width: 95%;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+  }
 }
 
 .icone-add {
@@ -31,7 +40,7 @@
 }
 
 .div-ver-mais {
-  padding-right: 15%;
+  padding-right: 16%;
 }
 
 .mouse h4:hover {
