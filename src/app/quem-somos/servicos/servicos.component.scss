@@ -16,10 +16,20 @@
 .vendas-titulo {
   font-family: Open Sans;
   font-style: normal;
-  font-weight: normal;
-  font-size: 39px;
-  line-height: 53px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
 
+}
+
+@media (max-width: 500px) {
+  .vendas-titulo {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .div-imagens {
@@ -29,6 +39,12 @@
 
 .mt-100 {
   margin-top: 100px;
+}
+
+@media (max-width: 991px) {
+  .mt-100 {
+    margin-top: 20px;
+  }
 }
 
 .div-servico {
