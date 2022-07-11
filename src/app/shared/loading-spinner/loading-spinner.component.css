@@ -1,4 +1,5 @@
 .lds-dual-ring {
+  position: absolute;
   justify-content: center;
   display: flex;
   align-items: center;
