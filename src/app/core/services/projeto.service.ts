@@ -54,7 +54,9 @@ export class ProjetoService {
     const projetos = (
       await this.afs
         .collection<Projeto>('projeto', (ref) =>
-          ref.where('tipoProjeto', '==', tipoProjeto)
+          ref
+            // .where('tipoProjeto', '==', tipoProjeto)
+            .orderBy('dataCriacao', 'desc')
         )
         .get()
         .toPromise()
