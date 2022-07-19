@@ -120,3 +120,14 @@
 .next-slide:hover {
   background-position: -24px -53px;
 }
+@media (max-width: 945px)
+{
+  ::ng-deep ngx-slick-carousel.custom-flex-content div > div.slick-track{
+    display: flex;
+    width: 100% !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+}
+
