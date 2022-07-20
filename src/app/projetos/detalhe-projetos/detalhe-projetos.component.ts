@@ -21,12 +21,12 @@ export class DetalheProjetosComponent implements OnInit {
     const tipo = this.route.snapshot.paramMap.get('tipoProjeto');
 
     switch (tipo) {
-      case TipoProjeto.RESIDENCIAL.toString():
-        this.buscarProjetos(TipoProjeto.RESIDENCIAL);
-        this.titulo += 'Comercial';
-        break;
       case TipoProjeto.EMPRESARIAL.toString():
         this.buscarProjetos(TipoProjeto.EMPRESARIAL);
+        this.titulo += 'Comercial';
+        break;
+      case TipoProjeto.RESIDENCIAL.toString():
+        this.buscarProjetos(TipoProjeto.RESIDENCIAL);
         this.titulo += 'Residencial';
         break;
       default:

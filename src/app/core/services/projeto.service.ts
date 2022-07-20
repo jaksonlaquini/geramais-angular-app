@@ -65,6 +65,23 @@ export class ProjetoService {
 
     return projetos;
   }
+  // async getProjeto(tipoProjeto: TipoProjeto): Promise<Projeto[]> {
+  //   const projetos = (
+  //     await this.afs
+  //       .collection<Projeto>('projeto', (ref) => {
+  //         ref
+  //           .where('tipoProjeto', '==', tipoProjeto)
+  //           .orderBy('dataCriacao', 'desc');
+  //       })
+  //       .get()
+  //       .toPromise()
+  //   ).docs.map((x) => {
+  //     const dados = x.data();
+  //     return { ...dados };
+  //   });
+
+  //   return projetos;
+  // }
 
   // tslint:disable-next-line:typedef
   async inserirImagem(file: File, name: string) {
