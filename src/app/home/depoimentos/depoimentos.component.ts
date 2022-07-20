@@ -32,12 +32,6 @@ export class DepoimentosComponent implements OnInit {
 
   ngOnInit(): void {
     this.buscarDepoimento();
-    // this.listaDepoimento.push({ nomeCliente: 'Jakso laquini', local: 'Vila Alegre - Rio Novo do Sul - Es', descricao: 'Pontualidade, honestidade e pontualismo',  nota: 5});
-    // this.listaDepoimento.push({ nomeCliente: 'Jakso laquini', local: 'Vila Alegre - Rio Novo do Sul - Es', descricao: 'Pontualidade, honestidade e pontualismo, Pontualidade, honestidade e pontualismo Pontualidade, honestidade e pontualismo',  nota: 5});
-    // this.listaDepoimento.push({ nomeCliente: 'Jakso laquini', local: 'Vila Alegre - Rio Novo do Sul - Es', descricao: 'Pontualidade, honestidade e pontualismo',  nota: 5});
-    // this.listaDepoimento.push({ nomeCliente: 'Jakso laquini', local: 'Vila Alegre - Rio Novo do Sul - Es', descricao: 'Pontualidade, honestidade e pontualismo',  nota: 5});
-    // this.listaDepoimento.push({ nomeCliente: 'Jakso laquini', local: 'Vila Alegre - Rio Novo do Sul - Es', descricao: 'Pontualidade, honestidade e pontualismo',  nota: 5});
-    // this.listaDepoimento.push({ nomeCliente: 'Jakso laquini', local: 'Vila Alegre - Rio Novo do Sul - Es', descricao: 'Pontualidade, honestidade e pontualismo',  nota: 5});
   }
 
   private async buscarDepoimento(): Promise<void> {
