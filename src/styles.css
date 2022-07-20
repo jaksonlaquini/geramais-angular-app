@@ -45,12 +45,12 @@
 
 .texto-titulo-topico {
   font-weight: 100;
-  line-height: 0.2;
+  line-height: 1;
 }
 
 .texto-titulo-topico-projeto {
   font-weight: 100;
-  line-height: 0.2;
+  line-height: 1;
   font-size: 40px;
   font-weight: 700;
 }
@@ -69,4 +69,8 @@
 
 .cursor {
   cursor: pointer;
+}
+
+.mt-10 {
+  margin-top: 10px;
 }
