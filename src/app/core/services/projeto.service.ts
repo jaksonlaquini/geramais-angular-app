@@ -53,11 +53,11 @@ export class ProjetoService {
   async getProjeto(tipoProjeto: TipoProjeto): Promise<Projeto[]> {
     const projetos = (
       await this.afs
-        .collection<Projeto>('projeto', (ref) =>
+        .collection<Projeto>('projeto', (ref) => {
           ref
-            // .where('tipoProjeto', '==', tipoProjeto)
-            .orderBy('dataCriacao', 'desc')
-        )
+            .where('tipoProjeto', '==', tipoProjeto)
+            .orderBy('dataCriacao', 'desc');
+        })
         .get()
         .toPromise()
     ).docs.map((x) => {

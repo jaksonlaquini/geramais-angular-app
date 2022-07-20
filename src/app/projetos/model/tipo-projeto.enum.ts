@@ -1,5 +1,5 @@
 export enum TipoProjeto {
-  RESIDENCIAL= 1,
-  EMPRESARIAL = 2,
-  RURAL = 3
+  EMPRESARIAL = 1,
+  RESIDENCIAL = 2,
+  RURAL = 3,
 }
