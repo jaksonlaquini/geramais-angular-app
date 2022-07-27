@@ -1,4 +1,5 @@
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
 import { SETTINGS as FIRESTORE_SETTINGS } from '@angular/fire/firestore';
@@ -23,8 +24,8 @@ import { DetalheProjetosComponent } from './projetos/detalhe-projetos/detalhe-pr
 import { ProjetosComponent } from './projetos/projetos.component';
 import { QuemSomosModule } from './quem-somos/quem-somos.module';
 import { FooterComponent } from './shared/footer/footer.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
 import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
     ToastrModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireStorageModule,
+    HttpClientModule,
   ],
   providers: [
     MessageService,

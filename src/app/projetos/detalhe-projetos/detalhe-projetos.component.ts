@@ -10,7 +10,7 @@ import { TipoProjeto } from '../model/tipo-projeto.enum';
   styleUrls: ['./detalhe-projetos.component.scss'],
 })
 export class DetalheProjetosComponent implements OnInit {
-  titulo = 'Projeto ';
+  titulo = '';
   listaProjeto: Projeto[] = [];
   constructor(
     private route: ActivatedRoute,
@@ -28,6 +28,10 @@ export class DetalheProjetosComponent implements OnInit {
       case TipoProjeto.RESIDENCIAL.toString():
         this.buscarProjetos(TipoProjeto.RESIDENCIAL);
         this.titulo += 'Residencial';
+        break;
+      case TipoProjeto.INDUSTRIAL.toString():
+        this.buscarProjetos(TipoProjeto.INDUSTRIAL);
+        this.titulo += 'Industrial';
         break;
       default:
         this.buscarProjetos(TipoProjeto.RURAL);

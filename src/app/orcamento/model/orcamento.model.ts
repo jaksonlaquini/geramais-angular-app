@@ -5,5 +5,5 @@ export class OrcamentoModel {
   telefone!: string;
   endereco!: string;
   mensagem!: string;
-  arquivo: any;
+  anexo: any;
 }

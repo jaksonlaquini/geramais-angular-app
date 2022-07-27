@@ -26,3 +26,24 @@
   background-size: cover;
   border-radius: 10px;
 }
+
+.titulo-topico-projeto {
+  font-weight: 100;
+  line-height: 1;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .titulo-topico-projeto {
+    font-weight: 100;
+    line-height: 1;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .div-img-projetos {
+    padding: 15px;
+  }
+
+}
