@@ -7,7 +7,7 @@
   <div class="row text-center">
     <div class="col display-flex">
       <div class="col-lg-6 display-flex mt-30" *ngFor="let projeto of listaProjeto">
-        <div class="col-lg-6">
+        <div class="col-lg-6 bg-sem-foto">
           <img [src]="projeto.imagemUrl" class="img" (click)="inserirProjeto()">
         </div>
         <div class="col-lg-6 text-left mt-10">
