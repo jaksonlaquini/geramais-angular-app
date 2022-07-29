@@ -2,47 +2,33 @@
   <div class="col-md-6">
     <div class="form-group">
       <label class="negrito-600" for="exampleFormControlInput1">Nome*</label>
-      <input
-        class="form-control"
-        [(ngModel)]="trabalheConosco.nome"
-        placeholder="Ex:José da Silva "
-        type="text"
-      />
+      <input class="form-control" [(ngModel)]="trabalheConosco.nome" placeholder="Ex: José da Silva " type="text" />
     </div>
   </div>
 
   <div class="col-md-6">
     <div class="form-group">
       <label class="negrito-600" for="exampleFormControlInput1">Email*</label>
-      <input
-        type="email"
-        [(ngModel)]="trabalheConosco.email"
-        class="form-control"
-        id="exampleFormControlInput1"
-        placeholder="name@example.com"
-      />
+      <input type="email" [(ngModel)]="trabalheConosco.email" class="form-control" id="exampleFormControlInput1"
+        placeholder="name@example.com" />
     </div>
   </div>
 
   <div class="col-md-6">
     <div class="form-group">
-      <label for="example-tel-input" class="negrito-600 form-control-label"
-        >Telefone*</label
-      >
-      <input
-        class="form-control"
-        type="text"
-        mask="(00) 00000-0000"
-        [(ngModel)]="trabalheConosco.telefone"
-        placeholder="(99) 99999-9999"
-        id="example-tel-input"
-        required
-        maxlength="15"
-      />
+      <label for="example-tel-input" class="negrito-600 form-control-label">Telefone*</label>
+      <input class="form-control" type="text" mask="(00) 00000-0000" [(ngModel)]="trabalheConosco.telefone"
+        placeholder="(99) 99999-9999" id="example-tel-input" required maxlength="15" />
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label class="negrito-600" for="exampleFormControlInput1">Área de interesse</label>
+      <input class="form-control" [(ngModel)]="trabalheConosco.areaInteresse" placeholder="Ex: Vendas " type="text" />
     </div>
   </div>
 
-  <div class="col-md-6">
+  <!-- <div class="col-md-6">
     <div class="form-group">
       <label class="negrito-600" for="exampleFormControlInput1"
         >Área de interesse*</label
@@ -62,26 +48,26 @@
         <option value="7">Área</option>
       </select>
     </div>
-  </div>
-  <div class="col-md-12">
+  </div> -->
+  <!-- <div class="col-md-12">
     <label class="negrito-600">Currículo:*</label>
     <div class="custom-file">
-      <input type="file" class="custom-file-input" id="customFileLang" >
+      <input type="file" class="custom-file-input" id="customFileLang">
       <label class="custom-file-label" for="customFileLang">Selecione um arquivo</label>
+    </div>
+  </div> -->
+  <div class="col-md-12">
+    <label class="negrito-600">Currículo:</label>
+    <div class="custom-file">
+      <label for="exampleFormControlFile1"></label>
+      <input #input type="file" class="w-100" (change)="carregarCurriculo($event)" id="exampleFormControlFile1">
     </div>
   </div>
   <div>
     <div class="form-group">
-      <label class="negrito-600" for="exampleFormControlTextarea1"
-        >Apresentação</label
-      >
-      <textarea
-        class="form-control"
-        id="exampleFormControlTextarea1"
-        [(ngModel)]="trabalheConosco.apresentacao"
-        placeholder="Sou Mateus Silva, tenho x anos e habilidades....)"
-        rows="3"
-      ></textarea>
+      <label class="negrito-600" for="exampleFormControlTextarea1">Apresentação</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" [(ngModel)]="trabalheConosco.apresentacao"
+        placeholder="Sou Mateus Silva, tenho x anos e habilidades....)" rows="3"></textarea>
     </div>
     <div class="col-md-12 div-btn-contato">
       <button type="submit" class="btn btn-secondary" (click)="limpar()">

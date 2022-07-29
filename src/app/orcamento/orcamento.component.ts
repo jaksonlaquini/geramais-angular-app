@@ -30,25 +30,33 @@ export class OrcamentoComponent implements OnInit {
   public enviarOrcamento(): void {
     if (this.validarContato()) {
       this.loading = true;
-      this.contatoService.enviarEmailOrcamento(this.orcamento).subscribe(
-        (resultado) => {
-          this.messageService.showMessage(
-            'Orçamento enviado com sucesso! Entraremos em contato o mais rápido possível. Aguarde!',
-            'success'
-          );
-          this.limparOrcamento();
-          this.loading = false;
-        },
-        (erro) => {
-          if (erro.status === 400) {
-            this.messageService.showMessage(
-              'Seu email não pode ser enviado. Por favor tente mais tarde!',
-              'error'
-            );
-            this.loading = false;
-          }
-        }
-      );
+
+      try {
+        this.contatoService
+          .enviarEmailOrcamento(this.orcamento)
+          .then((resultado) => {
+            if (resultado.sucesso) {
+              this.messageService.showMessage(
+                'OBRIGADO! Recebemos sua solicitação de orçamento. Retornaremos o contato em breve!',
+                'success'
+              );
+              this.limparOrcamento();
+              this.loading = false;
+            } else {
+              this.messageService.showMessage(
+                'Seu email não pode ser enviado. Por favor tente mais tarde!',
+                'error'
+              );
+              this.loading = false;
+            }
+          });
+      } catch (error) {
+        this.messageService.showMessage(
+          'Seu email não pode ser enviado. Por favor tente mais tarde!',
+          'error'
+        );
+        this.loading = false;
+      }
     }
   }
 
@@ -72,13 +80,15 @@ export class OrcamentoComponent implements OnInit {
   }
 
   public limparOrcamento(): void {
+    if (this.refField) {
+      this.refField.nativeElement.value = '';
+    }
     this.iniciarOrcamento();
   }
 
   iniciarOrcamento(): void {
     this.orcamento = new OrcamentoModel();
     this.orcamento.servico = 'Selecione um serviço';
-    this.refField.nativeElement.value = '';
   }
 
   public carregarImagm(event: any): void {

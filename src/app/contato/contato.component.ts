@@ -26,25 +26,30 @@ export class ContatoComponent implements OnInit {
   public enviarContato(): void {
     if (this.validarContato()) {
       this.loading = true;
-      this.contatoService.enviarEmail(this.contato).subscribe(
-        (resultado) => {
-          this.messageService.showMessage(
-            'Contato enviado com sucesso! Entraremos em contato o mais rápido possível. Aguarde!',
-            'success'
-          );
-          this.limparContato();
-          this.loading = false;
-        },
-        (erro) => {
-          if (erro.status === 400) {
+      try {
+        this.contatoService.enviarEmail(this.contato).then((resultado) => {
+          if (resultado.sucesso) {
+            this.messageService.showMessage(
+              'Mensagem enviada! Em breve retornaremos o contato.',
+              'success'
+            );
+            this.limparContato();
+            this.loading = false;
+          } else {
             this.messageService.showMessage(
               'Seu email não pode ser enviado. Por favor tente mais tarde!',
               'error'
             );
             this.loading = false;
           }
-        }
-      );
+        });
+      } catch (error) {
+        this.messageService.showMessage(
+          'Seu email não pode ser enviado. Por favor tente mais tarde!',
+          'error'
+        );
+        this.loading = false;
+      }
     }
   }
 

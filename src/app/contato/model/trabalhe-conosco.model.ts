@@ -2,6 +2,7 @@ export class TrabalheConoscoModel {
   nome!: string;
   email!: string;
   telefone!: string;
-  areaInteresse!: number;
+  areaInteresse!: string;
   apresentacao!: string;
+  anexo!: any;
 }
