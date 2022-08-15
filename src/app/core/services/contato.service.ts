@@ -8,8 +8,7 @@ import { OrcamentoModel } from 'src/app/orcamento/model/orcamento.model';
   providedIn: 'root',
 })
 export class ContatoService {
-  // readonly apiURL: string = 'https://geramaisengenhariaapi.herokuapp.com/';
-  readonly apiURL: string = 'http://localhost:3001/';
+  readonly apiURL: string = 'https://geramaisengenhariaapi.herokuapp.com/';
   constructor(private http: HttpClient) {}
 
   // tslint:disable-next-line:typedef
