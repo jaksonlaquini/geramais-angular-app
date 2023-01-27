@@ -1,2 +1,2 @@
 # geramais-app
-Repositorio front end da gera mais engenharia
+Repositorio front end em angular8+
